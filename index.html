@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Making Sulfuric Acid. The Contact Process</title>
+  <meta name="description" content="Student-friendly website about the Contact Process: discovery, equations, conditions, purification, implications, and references." />
+
+  <style>
+    /* Black & white student-style interface */
+    :root{
+      --bg:#ffffff;
+      --text:#000000;
+      --muted:#333333;
+      --line:#000000;
+      --max:980px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font: 16px/1.6 Georgia, "Times New Roman", Times, serif;
+    }
+    a{color:#000; text-decoration:underline}
+    a:hover{opacity:.75}
+
+    header{
+      position:sticky; top:0; z-index:10;
+      background:#fff;
+      border-bottom:2px solid var(--line);
+    }
+    .wrap{max-width:var(--max); margin:0 auto; padding:16px}
+    .topbar{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .brand h1{margin:0; font-size:18px}
+    .brand p{margin:4px 0 0; color:var(--muted); font-size:13px}
+
+    nav{display:flex; flex-wrap:wrap; gap:8px}
+    nav a{
+      border:1px solid #000;
+      padding:6px 8px;
+      font-size:13px;
+      text-decoration:none;
+      color:#000;
+    }
+    nav a:hover{text-decoration:underline}
+
+    main{padding:20px 0 50px}
+    .box{
+      border:2px solid #000;
+      padding:16px;
+      margin:14px 0;
+    }
+    h2{margin:0 0 10px; font-size:20px}
+    h3{margin:16px 0 8px; font-size:16px}
+    p{margin:10px 0}
+    .muted{color:var(--muted)}
+    ul{margin:8px 0 8px 20px}
+    li{margin:6px 0}
+    .eq{
+      border:1px solid #000;
+      padding:10px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      font-size:14px;
+      overflow:auto;
+      background:#fff;
+    }
+    figure{
+      margin:0;
+      border:1px solid #000;
+      padding:10px;
+      background:#fff;
+    }
+    figure img{width:100%; height:auto; display:block}
+    figcaption{margin-top:8px; font-size:13px; color:var(--muted)}
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      border:2px solid #000;
+      margin-top:10px;
+      font-size:15px;
+    }
+    th, td{
+      border:1px solid #000;
+      padding:10px;
+      vertical-align:top;
+    }
+    th{background:#fff}
+    footer{
+      margin-top:18px;
+      padding-top:12px;
+      border-top:2px solid #000;
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">
+      <h1>Making Sulfuric Acid (H₂SO₄): The Contact Process</h1>
+      <p>Industrial chemistry topic. Equations, conditions, diagrams, implications, references</p>
+    </div>
+    <nav aria-label="Navigation">
+      <a href="#intro">Introduction</a>
+      <a href="#equations">Equations</a>
+      <a href="#conditions">Conditions</a>
+      <a href="#purification">Purification</a>
+      <a href="#diagrams">Diagrams</a>
+      <a href="#implications">Implications</a>
+      <a href="#future">Future</a>
+      <a href="#references">References</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="intro" class="box">
+    <h2>1. Introduction</h2>
+    <p>
+      The Contact Process is the main industrial method used to produce sulfuric acid (H₂SO₄).
+      The process is linked to the patent by Peregrine Phillips (1831), who described a method for making sulfuric acid
+      using catalytic oxidation [1]. Sulfuric acid is one of the most produced industrial chemicals because it is needed in many industries,
+      especially fertilizer production [2, 4].
+    </p>
+    <p>
+      Sulfuric acid helps solve a major global problem: food security. Large amounts of sulfuric acid are used to make
+      phosphate fertilizers, which increase crop yields and support large-scale agriculture [3, 4].
+    </p>
+    <p class="muted">
+      Note: Bracketed numbers (example: [2]) are in-text citations that match the numbered References list.
+    </p>
+  </section>
+
+  <section id="equations" class="box">
+    <h2>2. Chemical equations (Contact Process)</h2>
+
+    <h3>Stage 1: Making sulfur dioxide</h3>
+    <div class="eq">
+      S(s) + O₂(g) → SO₂(g)
+    </div>
+
+    <h3>Stage 2: Oxidation of sulfur dioxide (reversible)</h3>
+    <div class="eq">
+      2 SO₂(g) + O₂(g) ⇌ 2 SO₃(g)
+    </div>
+    <p>
+      This step is exothermic, so higher temperature reduces the equilibrium yield of SO₃, but lower temperature makes the
+      reaction too slow. A catalyst is used to increase the rate without changing the equilibrium position [2,5].
+    </p>
+
+    <h3>Stage 3: Absorption to form sulfuric acid</h3>
+    <div class="eq">
+      SO₃(g) + H₂SO₄(l) → H₂S₂O₇(l)  (oleum)
+      <br/>
+      H₂S₂O₇(l) + H₂O(l) → 2 H₂SO₄(l)
+    </div>
+    <p>
+      Industrial plants usually do not add SO₃ directly to water because it can form a difficult to control acid mist.
+      Absorbing SO₃ into concentrated acid first is more controllable and efficient [2].
+    </p>
+  </section>
+
+  <section id="conditions" class="box">
+    <h2>3. Conditions and why they are used</h2>
+
+    <table aria-label="Operating conditions table">
+      <thead>
+        <tr>
+          <th>Factor</th>
+          <th>Typical industrial choice</th>
+          <th>Reason (simple scientific explanation)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Temperature</td>
+          <td>Moderate temperature (mid-400 °C range)</td>
+          <td>
+            Lower temperature increases equilibrium yield (exothermic reaction), but reaction rate becomes too slow.
+            Moderate temperature is a compromise, and the catalyst helps the reaction proceed fast enough [2,5].
+          </td>
+        </tr>
+        <tr>
+          <td>Pressure</td>
+          <td>Near atmospheric to slightly above</td>
+          <td>
+            Higher pressure can slightly favor SO₃ formation, but the effect is small compared to the cost of compression and equipment.
+            Many plants focus on good catalyst design and absorption instead of very high pressure [2].
+          </td>
+        </tr>
+        <tr>
+          <td>Catalyst</td>
+          <td>V₂O₅ (vanadium(V) oxide)</td>
+          <td>
+            The catalyst lowers activation energy, increasing the rate. It does not change equilibrium yield, but it makes the process practical at moderate temperature [2].
+          </td>
+        </tr>
+        <tr>
+          <td>Gas purity</td>
+          <td>Clean, dry gases</td>
+          <td>
+            Impurities can poison the catalyst and reduce conversion. Dry gases reduce corrosion and unwanted acid mist formation before absorption [2].
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="purification" class="box">
+    <h2>4. Reactant sources, extraction, and purification</h2>
+
+    <h3>Sources of reactants</h3>
+    <ul>
+      <li><strong>Sulfur (S):</strong> obtained from natural deposits or recovered during petroleum and natural gas processing [2].</li>
+      <li><strong>Oxygen (O₂):</strong> supplied from air [2].</li>
+      <li><strong>Absorbent acid and water:</strong> concentrated H₂SO₄ is used in absorption; water is added later to reach the required concentration [2].</li>
+    </ul>
+
+    <h3>How products are extracted and purified</h3>
+    <p>
+      After SO₂ is converted to SO₃ in catalytic beds, the gas mixture enters an absorption tower.
+      SO₃ is absorbed into concentrated sulfuric acid to form oleum. Then oleum is carefully diluted with water
+      to produce sulfuric acid at the required concentration. Control of temperature and acid strength helps reduce mist formation
+      and improves absorption efficiency [2].
+    </p>
+  </section>
+
+  <section id="diagrams" class="box">
+    <h2>5. Diagrams and graphs</h2>
+
+    <figure>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Scheme_of_contact_process-fi.svg/1280px-Scheme_of_contact_process-fi.svg.png"
+        alt="Flow scheme of the contact process (diagram)."
+        loading="lazy"
+      />
+      <figcaption>
+        <strong>Figure 1.</strong> Flow diagram of the Contact Process (equipment sequence and material flow). Source: QWerk (2009), Wikimedia Commons (CC BY-SA 3.0). [6]
+      </figcaption>
+    </figure>
+
+    <div style="height:12px"></div>
+
+    <figure>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Catalyst_Energy_Diagram.png"
+        alt="Catalyst energy diagram."
+        loading="lazy"
+      />
+      <figcaption>
+        <strong>Figure 2.</strong> Energy diagram showing reduced activation energy with a catalyst. Source: Ambrogi, E. (2021), Wikimedia Commons (CC BY-SA 4.0). [8]
+      </figcaption>
+    </figure>
+
+    <div style="height:12px"></div>
+
+    <figure>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Diagram_Production_sulfuric_acid_en.svg/1280px-Diagram_Production_sulfuric_acid_en.svg.png"
+        alt="Graph of sulfuric acid production trends."
+        loading="lazy"
+      />
+      <figcaption>
+        <strong>Figure 3.</strong> Graph showing sulfuric acid production trends (selected countries, 1970–2003). Source: Orci (2008), Wikimedia Commons. [7]
+      </figcaption>
+    </figure>
+  </section>
+
+  <section id="implications" class="box">
+    <h2>6. Implications (two factors: environmental and economic)</h2>
+
+    <h3>Environmental factor</h3>
+    <p>
+      Sulfur dioxide is an air pollutant and can contribute to acid deposition if released into the atmosphere.
+      A major advantage of the Contact Process is that it is designed to convert SO₂ into a useful product and capture it in liquid form,
+      reducing emissions when the plant operates correctly [2].
+    </p>
+
+    <p><strong>Advantage 1</strong> High conversion and absorption can reduce SO₂ emissions, helping lower the risk of acid rain and air pollution [2].</p>
+    <p><strong>Advantage 2</strong> The oxidation step releases heat (exothermic reaction), and industrial plants can recover this heat to make steam/electricity, improving energy efficiency [2].</p>
+    <p>
+      <strong>Disadvantage:</strong> Sulfuric acid is highly corrosive, and SO₂/SO₃ are hazardous gases. Accidents, leaks, or poor mist control can damage the environment
+      and require strong emission monitoring and containment systems [2].
+    </p>
+
+    <h3>Economic factor</h3>
+    <p>
+      Sulfuric acid is economically important because many industries depend on it, especially fertilizer production.
+      Reliable sulfuric acid supply supports agriculture and industrial manufacturing [3, 4].
+    </p>
+
+    <p><strong>Advantage 1</strong> Supports fertilizer production, which helps improve crop yields and stabilizes agricultural production [3–4].</p>
+    <p><strong>Advantage 2</strong> Efficient catalytic operation and heat recovery can lower the cost per tonne of acid produced when plants are optimized [2].</p>
+    <p>
+      <strong>Disadvantage:</strong> Plants are expensive to build and operate because of corrosion-resistant equipment, catalysts, gas cleaning units, and safety systems.
+      These costs can be a barrier for new producers [2].
+    </p>
+  </section>
+
+  <section id="future" class="box">
+    <h2>7. Future outlook</h2>
+    <p>
+      The Contact Process is expected to stay as the main method because it is efficient and already widely used in industry [2, 4].
+      Future improvements usually focus on better catalysts, stronger emission control, and better energy integration. These changes can reduce environmental risks
+      and improve efficiency while maintaining high production capacity [2].
+    </p>
+  </section>
+
+  <section id="references" class="box">
+    <h2>References</h2>
+    <ol>
+      <li>
+        W., W. (1925). The Manufacture of Sulphuric Acid (Contact Process). <em>Nature, 116</em>, 385–386. https://doi.org/10.1038/116385a0
+      </li>
+      <li>
+        Encyclopaedia Britannica. (n.d.). <em>Contact process</em>. In Encyclopaedia Britannica. Retrieved February 8, 2026, from
+        https://www.britannica.com/technology/contact-process
+      </li>
+      <li>
+        National Center for Biotechnology Information. (n.d.). <em>Sulfuric Acid</em> (PubChem CID: 1118). PubChem. Retrieved February 8, 2026, from
+        https://pubchem.ncbi.nlm.nih.gov/compound/Sulfuric-Acid
+      </li>
+      <li>
+        Encyclopaedia Britannica. (n.d.). <em>Sulfuric acid</em>. In Encyclopaedia Britannica. Retrieved February 8, 2026, from
+        https://www.britannica.com/science/sulfuric-acid
+      </li>
+      <li>
+        OpenStax. (2019). <em>Chemistry 2e</em> (13.3 Shifting Equilibria—Le Châtelier’s Principle). Rice University. Retrieved February 8, 2026, from
+        https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle
+      </li>
+      <li>
+        QWerk. (2009). <em>Scheme of contact process-fi.svg</em> [Diagram]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Scheme_of_contact_process-fi.svg
+      </li>
+      <li>
+        Orci. (2008). <em>Diagram Production sulfuric acid en.svg</em> [Graph]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Diagram_Production_sulfuric_acid_en.svg
+      </li>
+      <li>
+        Ambrogi, E. (2021). <em>Catalyst Energy Diagram.png</em> [Diagram]. Wikimedia Commons. https://commons.wikimedia.org/wiki/File:Catalyst_Energy_Diagram.png
+      </li>
+    </ol>
+  </section>
+</main>
+</body>
+</html>
